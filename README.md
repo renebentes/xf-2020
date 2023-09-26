@@ -21,6 +21,12 @@ Há links específicos para cada aplicativo desenvolvido durante o curso.
 
 ### Aplicativos
 
+#### Quantidade
+
+Aplicativo simples para exemplificar funcionamento do .NET MAUI.
+
+[Quantidade](src/Quantidade)
+
 ## Autor
 
 [Rene Bentes Pinto](http://github.com/renebentes)
