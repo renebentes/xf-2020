@@ -403,3 +403,23 @@ dotnet_naming_style.s_camelcase.capitalization = camel_case
 
 [src/**/Platforms/*.cs]
 dotnet_style_namespace_match_folder = false:silent
+
+# Analyzers
+
+# IDE0001: Simplify name 'System.IO.FileInfo' to 'FileInfo'
+dotnet_diagnostic.IDE0001.severity = warning
+
+# IDE0002: Simplify member access 'Classe.Do()' to 'Do()'
+dotnet_diagnostic.IDE0002.severity = warning
+
+# IDE0004: Remove unnecessary cast
+dotnet_diagnostic.IDE0004.severity = warning
+
+# IDE0005: Remove unnecessary using directives
+dotnet_diagnostic.IDE0005.severity = warning
+
+# IDE0090: Simplify new expression
+dotnet_diagnostic.IDE0090.severity = warning
+
+# IDE1006: Code-style naming rules
+dotnet_diagnostic.IDE1006.severity = warning
