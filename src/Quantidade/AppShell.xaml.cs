@@ -1,4 +1,4 @@
-﻿namespace Quantidade;
+namespace Quantidade;
 
 public partial class AppShell : Shell
 {
