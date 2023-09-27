@@ -1,24 +1,26 @@
-﻿namespace Quantidade;
+namespace Quantidade;
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
+    private int _count = 1;
 
     public MainPage()
+        => InitializeComponent();
+
+    private void OnIncrement(object sender, EventArgs e)
     {
-        InitializeComponent();
+        _count++;
+        Quantidade.Text = _count.ToString();
+        SemanticScreenReader.Announce(Quantidade.Text);
     }
 
-    private void OnCounterClicked(object sender, EventArgs e)
+    private void OnDecrement(object sender, EventArgs e)
     {
-        count++;
-
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+        if (_count > 0)
+        {
+            _count--;
+            Quantidade.Text = _count.ToString();
+            SemanticScreenReader.Announce(Quantidade.Text);
+        }
     }
 }
-
