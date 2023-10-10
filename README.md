@@ -27,6 +27,10 @@ Aplicativo simples para exemplificar funcionamento do .NET MAUI.
 
 [Quantidade](src/Quantidade)
 
+#### Gallery
+
+Aplicativo para apresentar os componentes visuais do .NET MAUI.
+
 ## Autor
 
 [Rene Bentes Pinto](http://github.com/renebentes)
