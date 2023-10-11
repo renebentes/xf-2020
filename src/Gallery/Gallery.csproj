@@ -22,8 +22,8 @@
     <!-- Display name -->
     <ApplicationTitle>Gallery</ApplicationTitle>
 
-		<!-- App Identifier -->
-		<ApplicationId>com.companyname.gallery</ApplicationId>
+    <!-- App Identifier -->
+    <ApplicationId>br.com.renebentes.gallery</ApplicationId>
 
     <!-- Versions -->
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
