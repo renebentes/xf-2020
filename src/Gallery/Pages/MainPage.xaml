@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Gallery.MainPage"
+    x:Class="Gallery.Pages.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
@@ -24,16 +24,9 @@
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 SemanticProperties.HeadingLevel="Level2"
-                Text="Welcome to .NET Multi-platform App UI" />
+                Text="A ContentPage é a página principal de um aplicativo. A utilizamos para exibir todos os conteúdos" />
 
-            <Button
-                x:Name="CounterBtn"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
