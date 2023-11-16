@@ -6,9 +6,19 @@
     xmlns:pages="clr-namespace:Gallery.Pages"
     Title="Gallery">
 
-    <ShellContent
-        Title="ContentPage"
-        ContentTemplate="{DataTemplate pages:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem
+        Title="Páginas"
+        FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+            Title="Content Page"
+            ContentTemplate="{DataTemplate pages:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Navigation Page"
+            ContentTemplate="{DataTemplate pages:NavigationPage}"
+            Route="NavigationPage" />
+    </FlyoutItem>
 
 </Shell>
