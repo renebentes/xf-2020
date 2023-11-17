@@ -5,8 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <VerticalStackLayout
         Padding="30"
-        Spacing="25">
-        <Label Text="A NavigationPage controla a navagação entre as páginas, além de permitir a exibição de uma barra de navegação no topo em que podem ser vistos título da página, menu hambúrger, botão de voltar, etc. " />
-        <Label Text="Neste exemplo, estamos usando o Shell como serviço de navegação, desta forma, não precisamos instanciar uma NavigationPage manualmente." />
+        Spacing="25"
+        VerticalOptions="Center">
+        <Label Text="A NavigationPage fornece uma experiência de navegação hierárquica onde se navega entre páginas, para frente e para trás. Funciona como uma pilha de páginas, onde a última que entrou é a primeira a sair (FIFO)." />
+        <Label Text="Neste exemplo, estamos usando o Shell como serviço de navegação, desta forma, não é prossível usarmos uma NavigationPage, pois é incompatível." />
     </VerticalStackLayout>
 </ContentPage>
