@@ -2,7 +2,8 @@
 <ContentPage
     x:Class="Gallery.Pages.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls">
 
     <ScrollView>
         <VerticalStackLayout
@@ -34,15 +35,9 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Para saber mais, consulte a " />
-                        <Span
+                        <controls:HyperlinkSpan
                             Text="documentação completa"
-                            TextDecorations="Underline">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Command="{Binding TapCommand}"
-                                    CommandParameter="https://learn.microsoft.com/dotnet/maui/user-interface/pages/contentpage" />
-                            </Span.GestureRecognizers>
-                        </Span>
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/pages/contentpage" />
                         <Span Text="." />
                     </FormattedString>
                 </Label.FormattedText>
