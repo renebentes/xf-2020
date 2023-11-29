@@ -2,12 +2,48 @@
 <ContentPage
     x:Class="Gallery.Pages.NavigationPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <VerticalStackLayout
-        Padding="30"
-        Spacing="25"
-        VerticalOptions="Center">
-        <Label Text="A NavigationPage fornece uma experiência de navegação hierárquica onde se navega entre páginas, para frente e para trás. Funciona como uma pilha de páginas, onde a última que entrou é a primeira a sair (FIFO)." />
-        <Label Text="Neste exemplo, estamos usando o Shell como serviço de navegação, desta forma, não é prossível usarmos uma NavigationPage, pois é incompatível." />
-    </VerticalStackLayout>
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="NavigationPage" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="A NavigationPage fornece uma experiência de navegação hierárquica onde se navega entre páginas, para frente e para trás. Funciona como uma pilha de páginas, onde a última que entrou é a primeira a sair (FIFO)." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Neste exemplo, estamos usando o Shell como serviço de navegação, desta forma, não é prossível usarmos uma NavigationPage, pois é incompatível." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/pages/navigationpage" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
