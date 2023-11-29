@@ -16,6 +16,11 @@
             Route="MainPage" />
 
         <ShellContent
+            Title="Flyout Page"
+            ContentTemplate="{DataTemplate pages:FlyoutPage}"
+            Route="FlyoutPage" />
+
+        <ShellContent
             Title="Navigation Page"
             ContentTemplate="{DataTemplate pages:NavigationPage}"
             Route="NavigationPage" />
