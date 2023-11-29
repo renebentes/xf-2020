@@ -24,6 +24,11 @@
             Title="Navigation Page"
             ContentTemplate="{DataTemplate pages:NavigationPage}"
             Route="NavigationPage" />
+
+        <ShellContent
+            Title="Tabbed Page"
+            ContentTemplate="{DataTemplate pages:TabbedPage}"
+            Route="TabbedPage" />
     </FlyoutItem>
 
 </Shell>

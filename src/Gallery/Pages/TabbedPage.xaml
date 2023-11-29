@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.TabbedPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="TabbedPage" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="A TabbedPage mantém uma coleção de filhos do tipo Page, apenas um dos quais é totalmente visível por vez." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Cada filho, normalmente representado por uma ContentPage, é identificado por uma série de guias na parte superior ou inferior da página. E, quando sua guia é selecionada, o conteúdo da página é exibido." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Neste exemplo, estamos usando o Shell como serviço de navegação, desta forma, não é prossível usarmos uma TabbedPage, pois é incompatível." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/pages/tabbedpage" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
