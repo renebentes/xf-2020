@@ -14,7 +14,7 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="StackLayout" />
+                Text="VerticalStackLayout" />
 
             <Label
                 FontSize="18"
