@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.VerticalStackLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="StackLayout" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Organiza exibições filhas em uma pilha vertical unidimensional e é uma alternativa de mais desempenho a um StackLayout." />
+
+            <VerticalStackLayout
+                Margin="20"
+                Spacing="6">
+                <Label
+                    BackgroundColor="Red"
+                    HorizontalOptions="Start"
+                    Text="Start" />
+                <Label
+                    BackgroundColor="Yellow"
+                    HorizontalOptions="Center"
+                    Text="Center" />
+                <Label
+                    BackgroundColor="Blue"
+                    HorizontalOptions="End"
+                    Text="End" />
+                <Label
+                    BackgroundColor="Green"
+                    HorizontalOptions="Fill"
+                    Text="Fill" />
+            </VerticalStackLayout>
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/layouts/verticalstacklayout" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
