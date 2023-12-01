@@ -44,6 +44,11 @@
             Title="Vertical Stack Layout"
             ContentTemplate="{DataTemplate pages:VerticalStackLayoutPage}"
             Route="VerticalStackLayoutPage" />
+
+        <ShellContent
+            Title="Horizontal Stack Layout"
+            ContentTemplate="{DataTemplate pages:HorizontalStackLayoutPage}"
+            Route="HorizontalStackLayoutPage" />
     </FlyoutItem>
 
 </Shell>
