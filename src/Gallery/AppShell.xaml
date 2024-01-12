@@ -54,6 +54,10 @@
             Title="Grid"
             ContentTemplate="{DataTemplate pages:GridPage}"
             Route="GridPage" />
-    </FlyoutItem>
 
+        <ShellContent
+            Title="Absolute Layout"
+            ContentTemplate="{DataTemplate pages:AbsoluteLayoutPage}"
+            Route="AbsoluteLayoutPage" />
+    </FlyoutItem>
 </Shell>
