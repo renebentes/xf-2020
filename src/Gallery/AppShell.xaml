@@ -59,5 +59,10 @@
             Title="Absolute Layout"
             ContentTemplate="{DataTemplate pages:AbsoluteLayoutPage}"
             Route="AbsoluteLayoutPage" />
+
+        <ShellContent
+            Title="Flex Layout"
+            ContentTemplate="{DataTemplate pages:FlexLayoutPage}"
+            Route="FlexLayoutPage" />
     </FlyoutItem>
 </Shell>
