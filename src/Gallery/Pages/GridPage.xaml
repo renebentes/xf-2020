@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.GridPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridPage">
+    <Grid
+        BackgroundColor="#707070"
+        ColumnDefinitions="*,*,*,*"
+        ColumnSpacing="1"
+        RowDefinitions="150,*,*,*,*"
+        RowSpacing="1">
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Margin="10"
+            FontSize="48"
+            HorizontalOptions="End"
+            Text="0"
+            TextColor="White"
+            VerticalOptions="Center" />
+
+        <Button
+            Grid.Row="1"
+            BackgroundColor="#C9CAC0"
+            BorderWidth="0"
+            CornerRadius="0"
+            Text="C"
+            TextColor="Black" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="&#x00B1;"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="%"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            BackgroundColor="#FBBC0D"
+            CornerRadius="0"
+            Text="/" />
+
+        <Button
+            Grid.Row="2"
+            BackgroundColor="#C9CAC0"
+            BorderWidth="0"
+            CornerRadius="0"
+            Text="7"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="8"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="9"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            BackgroundColor="#FBBC0D"
+            CornerRadius="0"
+            Text="x" />
+
+        <Button
+            Grid.Row="3"
+            BackgroundColor="#C9CAC0"
+            BorderWidth="0"
+            CornerRadius="0"
+            Text="4"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="5"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="6"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            BackgroundColor="#FBBC0D"
+            CornerRadius="0"
+            Text="-" />
+
+        <Button
+            Grid.Row="4"
+            BackgroundColor="#C9CAC0"
+            BorderWidth="0"
+            CornerRadius="0"
+            Text="1"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="2"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="3"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            BackgroundColor="#FBBC0D"
+            CornerRadius="0"
+            Text="+" />
+
+        <Button
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="0"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            BackgroundColor="#C9CAC0"
+            CornerRadius="0"
+            Text="."
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            BackgroundColor="#FBBC0D"
+            CornerRadius="0"
+            Text="=" />
+    </Grid>
+</ContentPage>
