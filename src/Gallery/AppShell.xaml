@@ -64,5 +64,10 @@
             Title="Flex Layout"
             ContentTemplate="{DataTemplate pages:FlexLayoutPage}"
             Route="FlexLayoutPage" />
+
+        <ShellContent
+            Title="Scroll"
+            ContentTemplate="{DataTemplate pages:ScrollViewPage}"
+            Route="ScrollViewPage" />
     </FlyoutItem>
 </Shell>
