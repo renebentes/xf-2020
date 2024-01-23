@@ -69,5 +69,10 @@
             Title="Scroll"
             ContentTemplate="{DataTemplate pages:ScrollViewPage}"
             Route="ScrollViewPage" />
+
+        <ShellContent
+            Title="Content View"
+            ContentTemplate="{DataTemplate pages:ContentViewPage}"
+            Route="ContentViewPage" />
     </FlyoutItem>
 </Shell>
