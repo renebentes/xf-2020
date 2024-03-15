@@ -37,6 +37,6 @@ Aplicativo para apresentar os componentes visuais do .NET MAUI.
 
 ## Licença
 
-Copyright (c) 2023 Rene Bentes Pinto
+Copyright (c) 2023-2024 Rene Bentes Pinto
 
 Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
