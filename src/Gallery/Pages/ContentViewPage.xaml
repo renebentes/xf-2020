@@ -22,6 +22,10 @@
         <controls:DirectorCard
             Name="Steven Spielberg"
             BoxViewBackgroundColor="Aqua"
-            Description="Renomado diretor" />
+            Description="Renomado Diretor" />
+
+        <controls:DirectorCard
+            Name="Zack Snyder"
+            BoxViewBackgroundColor="Yellow" />
     </VerticalStackLayout>
 </ContentPage>
