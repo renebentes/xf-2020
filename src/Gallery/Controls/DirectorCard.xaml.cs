@@ -22,8 +22,8 @@ public partial class DirectorCard : ContentView
 
     public Color BoxViewBackgroundColor
     {
-        get => (Color)GetValue(NameProperty);
-        set => SetValue(NameProperty, value);
+        get => (Color)GetValue(BoxViewBackgroundColorProperty);
+        set => SetValue(BoxViewBackgroundColorProperty, value);
     }
 
     public string Description
