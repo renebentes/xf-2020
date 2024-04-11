@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.FramePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    Title="Frame">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Frame" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="É usado para encapsular um modo de exibição ou um layout adicionando uma borda com cor, sombra e outras opções." />
+
+            <Frame
+                Padding="0"
+                CornerRadius="75"
+                HasShadow="False"
+                HorizontalOptions="Center"
+                IsClippedToBounds="True">
+                <BoxView
+                    BackgroundColor="Green"
+                    HeightRequest="150"
+                    WidthRequest="150" />
+            </Frame>
+
+            <Frame Padding="0">
+                <VerticalStackLayout>
+                    <Label
+                        Margin="20"
+                        FontSize="24"
+                        HorizontalOptions="Center"
+                        Text="Steven Spielberg" />
+                    <BoxView
+                        BackgroundColor="LightGray"
+                        HeightRequest="1" />
+                    <Label
+                        Margin="20"
+                        Text="Diretor de filmes famosos" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame
+                BorderColor="Green"
+                CornerRadius="1000"
+                HasShadow="False">
+
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Welcome to .NET MAUI!" />
+            </Frame>
+
+            <Label Text="A classe Frame existe no .NET MAUI para retrocompatibilidade com Xamarin.Forms a fim de que os usuários possam realizar migrações dos seus aplicativos Xamarin.Forms para .NET MAUI." />
+
+            <Label Text="Para novos aplicativos em .NET MAUI recomenda-se usar o Border e para sombreamentos a propriedade Bindable Shadow de VisualElement." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/frame" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

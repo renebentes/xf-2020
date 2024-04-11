@@ -74,5 +74,10 @@
             Title="Content View"
             ContentTemplate="{DataTemplate pages:ContentViewPage}"
             Route="ContentViewPage" />
+
+        <ShellContent
+            Title="Frame"
+            ContentTemplate="{DataTemplate pages:FramePage}"
+            Route="FramePage" />
     </FlyoutItem>
 </Shell>
