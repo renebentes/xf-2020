@@ -79,5 +79,10 @@
             Title="Frame"
             ContentTemplate="{DataTemplate pages:FramePage}"
             Route="FramePage" />
+
+        <ShellContent
+            Title="Border"
+            ContentTemplate="{DataTemplate pages:BorderPage}"
+            Route="BorderPage" />
     </FlyoutItem>
 </Shell>
