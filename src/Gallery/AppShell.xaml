@@ -88,5 +88,10 @@
             Title="Border"
             ContentTemplate="{DataTemplate pages:BorderPage}"
             Route="BorderPage" />
+
+        <ShellContent
+            Title="BoxView"
+            ContentTemplate="{DataTemplate pages:BoxViewPage}"
+            Route="BoxViewPage" />
     </FlyoutItem>
 </Shell>
