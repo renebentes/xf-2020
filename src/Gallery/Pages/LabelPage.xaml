@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.LabelPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    Title="LabelPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Label" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Exibe texto de linha única ou de várias linhas. O texto exibido pode ser colorido, espaçado e ter decorações." />
+
+            <Label
+                FontSize="18"
+                Text="TextDecorations" />
+
+            <Label
+                Text="Texto taxado"
+                TextDecorations="Strikethrough" />
+
+            <Label
+                Text="Texto sublinhado"
+                TextDecorations="Underline" />
+
+            <Label
+                FontSize="18"
+                Text="CharacterSpacing" />
+
+            <Label
+                CharacterSpacing="-2"
+                Text="Texto com espaço entre carateres reduzido" />
+
+            <Label
+                CharacterSpacing="2"
+                Text="Texto com espaço entre carateres aumentado" />
+
+            <Label
+                FontSize="18"
+                Text="MaxLines" />
+
+            <Label
+                MaxLines="3"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/label" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

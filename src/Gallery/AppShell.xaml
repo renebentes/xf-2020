@@ -93,5 +93,10 @@
             Title="BoxView"
             ContentTemplate="{DataTemplate pages:BoxViewPage}"
             Route="BoxViewPage" />
+
+        <ShellContent
+            Title="Label"
+            ContentTemplate="{DataTemplate pages:LabelPage}"
+            Route="LabelPage" />
     </FlyoutItem>
 </Shell>
