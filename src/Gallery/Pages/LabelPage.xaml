@@ -88,6 +88,21 @@
 
             <Label
                 FontSize="18"
+                Text="HTML TextType" />
+
+            <Label
+                Text="Texto com estrutura &lt;strong&gt;HTML&lt;/&gt;"
+                TextType="Html" />
+
+            <Label TextType="Html">
+                <![CDATA[
+                Ao usar <strong>CDATA</strong> podemos utiluzar diretamente as tags HTML
+                ]]>
+            </Label>
+
+
+            <Label
+                FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level3">
                 <Label.FormattedText>
