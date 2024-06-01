@@ -98,5 +98,10 @@
             Title="Label"
             ContentTemplate="{DataTemplate pages:LabelPage}"
             Route="LabelPage" />
+
+        <ShellContent
+            Title="Button"
+            ContentTemplate="{DataTemplate pages:ButtonPage}"
+            Route="ButtonPage" />
     </FlyoutItem>
 </Shell>

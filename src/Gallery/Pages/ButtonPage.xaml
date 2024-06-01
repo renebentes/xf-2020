@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.ButtonPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    Title="ButtonPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Button" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Exibe texto curto, acompanhado ou não de imagem, que responde ao toque ou clique para executar uma tarefa." />
+
+            <Button
+                BackgroundColor="Black"
+                CornerRadius="30"
+                Text="Botão"
+                TextColor="White" />
+
+            <Button
+                BackgroundColor="Transparent"
+                BorderColor="Black"
+                BorderWidth="2"
+                CornerRadius="30"
+                Text="Botão Outline"
+                TextColor="Black" />
+
+            <Button
+                BackgroundColor="Black"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="Botão"
+                TextColor="White" />
+
+            <Button
+                ContentLayout="Left, 20"
+                HorizontalOptions="Center"
+                ImageSource="paper_plane.png"
+                Text="Texto com ícone" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Para saber mais, consulte a " />
+                        <controls:HyperlinkSpan
+                            Text="documentação completa"
+                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/button" />
+                        <Span Text="." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
