@@ -57,6 +57,37 @@
 
             <Label
                 FontSize="18"
+                Text="LineBreakMode" />
+
+            <Label
+                LineBreakMode="WordWrap"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+
+            <Label
+                LineBreakMode="NoWrap"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
+                TextColor="Green" />
+
+            <Label
+                LineBreakMode="CharacterWrap"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+
+            <Label
+                LineBreakMode="HeadTruncation"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
+                TextColor="Green" />
+
+            <Label
+                LineBreakMode="MiddleTruncation"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+
+            <Label
+                LineBreakMode="TailTruncation"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
+                TextColor="Green" />
+
+            <Label
+                FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level3">
                 <Label.FormattedText>
