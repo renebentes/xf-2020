@@ -103,5 +103,10 @@
             Title="Button"
             ContentTemplate="{DataTemplate pages:ButtonPage}"
             Route="ButtonPage" />
+
+        <ShellContent
+            Title="ImageButton"
+            ContentTemplate="{DataTemplate pages:ImageButtonPage}"
+            Route="ImageButtonPage" />
     </FlyoutItem>
 </Shell>
