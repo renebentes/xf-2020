@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Gallery.Pages.ImageButtonPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -15,33 +15,21 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="ImageButton" />
+                Text="ImageButton"/>
 
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level2"
-                Text="Exibe uma imagem que responde ao toque ou clique para executar uma tarefa." />
+                Text="Exibe uma imagem que responde ao toque ou clique para executar uma tarefa."/>
 
             <ImageButton
                 HeightRequest="48"
                 Source="paper_plane.png"
-                WidthRequest="48" />
+                WidthRequest="48"/>
 
-            <Label
-                FontSize="18"
-                HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level3">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Para saber mais, consulte a " />
-                        <controls:HyperlinkSpan
-                            Text="documentação completa"
-                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/imagebutton" />
-                        <Span Text="." />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/imagebutton"/>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

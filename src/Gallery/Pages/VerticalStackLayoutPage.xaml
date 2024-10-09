@@ -43,21 +43,7 @@
                     Text="Fill" />
             </VerticalStackLayout>
 
-            <Label
-                FontSize="18"
-                HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level3">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Para saber mais, consulte a " />
-                        <controls:HyperlinkSpan
-                            Text="documentação completa"
-                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/layouts/verticalstacklayout" />
-                        <Span Text="." />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/layouts/verticalstacklayout" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

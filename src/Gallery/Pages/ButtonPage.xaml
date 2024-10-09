@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Gallery.Pages.ButtonPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -67,20 +67,7 @@
                 </VisualStateManager.VisualStateGroups>
             </Button>
 
-            <Label
-                FontSize="18"
-                HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level3">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Para saber mais, consulte a " />
-                        <controls:HyperlinkSpan
-                            Text="documentação completa"
-                            Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/button" />
-                        <Span Text="." />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/button" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
