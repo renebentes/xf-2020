@@ -59,7 +59,23 @@
                 FontSize="18"
                 Text="ClearButtonVisibility" />
 
-            <Entry ClearButtonVisibility="WhenEditing" />
+            <Entry ClearButtonVisibility="WhileEditing" />
+
+            <Label
+                FontSize="18"
+                Text="Keyboard, KeyboardFlags, ReturnType" />
+
+            <Entry Keyboard="Chat" />
+
+            <Entry ReturnType="Send">
+                <Entry.Keyboard>
+                    <Keyboard x:FactoryMethod="Create">
+                        <x:Arguments>
+                            <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
+                        </x:Arguments>
+                    </Keyboard>
+                </Entry.Keyboard>
+            </Entry>
 
             <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/entry" />
         </VerticalStackLayout>
