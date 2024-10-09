@@ -113,5 +113,10 @@
             Title="Image"
             ContentTemplate="{DataTemplate pages:ImagePage}"
             Route="ImagePage" />
+
+        <ShellContent
+            Title="Entry"
+            ContentTemplate="{DataTemplate pages:EntryPage}"
+            Route="EntryPage" />
     </FlyoutItem>
 </Shell>

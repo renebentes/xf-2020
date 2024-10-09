@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gallery.Pages.EntryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    Title="EntryPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Entry" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Permite que você insira e edite uma única linha de texto." />
+
+            <Label
+                FontSize="18"
+                Text="Text, TextColor" />
+
+            <Entry
+                Text="Texto simples"
+                TextColor="Blue" />
+
+            <Label
+                FontSize="18"
+                Text="Placeholder, PlaceholderColor" />
+
+            <Entry
+                Placeholder="Digite seu nome"
+                PlaceholderColor="LightBlue" />
+
+            <Label
+                FontSize="18"
+                Text="MaxLength, BackgroundColor" />
+
+            <Entry
+                BackgroundColor="LightBlue"
+                MaxLength="10" />
+
+            <Label
+                FontSize="18"
+                Text="IsReadOnly, IsPassword" />
+
+            <Entry
+                IsPassword="True"
+                IsReadOnly="True" />
+
+            <Label
+                FontSize="18"
+                Text="ClearButtonVisibility" />
+
+            <Entry ClearButtonVisibility="WhenEditing" />
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/entry" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
