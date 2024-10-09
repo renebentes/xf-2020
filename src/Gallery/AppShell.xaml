@@ -118,5 +118,10 @@
             Title="Entry"
             ContentTemplate="{DataTemplate pages:EntryPage}"
             Route="EntryPage" />
+
+        <ShellContent
+            Title="Editor"
+            ContentTemplate="{DataTemplate pages:EditorPage}"
+            Route="EditorPage" />
     </FlyoutItem>
 </Shell>
