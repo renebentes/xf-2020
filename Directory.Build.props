@@ -1,6 +1,5 @@
 <Project>
   <PropertyGroup>
-    <PropertyGroup>
     <Nullable>enable</Nullable>
     <NetVersion>net9.0</NetVersion>
     <LangVersion>latest</LangVersion>
