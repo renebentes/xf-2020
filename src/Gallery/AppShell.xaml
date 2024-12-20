@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:Gallery.Pages"
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
     Title="Gallery">
 
     <FlyoutItem
@@ -31,40 +32,44 @@
             Route="TabbedPage" />
     </FlyoutItem>
 
-    <FlyoutItem
-        Title="Layouts"
-        FlyoutDisplayOptions="AsMultipleItems">
-
-        <ShellContent
-            Title="Stack Layout"
-            ContentTemplate="{DataTemplate pages:StackLayoutPage}"
-            Route="StackLayoutPage" />
-
-        <ShellContent
-            Title="Vertical Stack Layout"
-            ContentTemplate="{DataTemplate pages:VerticalStackLayoutPage}"
-            Route="VerticalStackLayoutPage" />
-
-        <ShellContent
-            Title="Horizontal Stack Layout"
-            ContentTemplate="{DataTemplate pages:HorizontalStackLayoutPage}"
-            Route="HorizontalStackLayoutPage" />
-
-        <ShellContent
-            Title="Grid"
-            ContentTemplate="{DataTemplate pages:GridPage}"
-            Route="GridPage" />
-
-        <ShellContent
-            Title="Absolute Layout"
-            ContentTemplate="{DataTemplate pages:AbsoluteLayoutPage}"
-            Route="AbsoluteLayoutPage" />
-
-        <ShellContent
-            Title="Flex Layout"
-            ContentTemplate="{DataTemplate pages:FlexLayoutPage}"
-            Route="FlexLayoutPage" />
+    <FlyoutItem Title="Layouts" Route="LayoutsGalleryPage">
+        <ShellContent ContentTemplate="{DataTemplate layouts:LayoutsGalleryPage}"></ShellContent>
     </FlyoutItem>
+
+    <!-- <FlyoutItem -->
+    <!--     Title="Layouts" -->
+    <!--     FlyoutDisplayOptions="AsMultipleItems"> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Stack Layout" -->
+    <!--         ContentTemplate="{DataTemplate pages:StackLayoutPage}" -->
+    <!--         Route="StackLayoutPage" /> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Vertical Stack Layout" -->
+    <!--         ContentTemplate="{DataTemplate pages:VerticalStackLayoutPage}" -->
+    <!--         Route="VerticalStackLayoutPage" /> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Horizontal Stack Layout" -->
+    <!--         ContentTemplate="{DataTemplate pages:HorizontalStackLayoutPage}" -->
+    <!--         Route="HorizontalStackLayoutPage" /> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Grid" -->
+    <!--         ContentTemplate="{DataTemplate pages:GridPage}" -->
+    <!--         Route="GridPage" /> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Absolute Layout" -->
+    <!--         ContentTemplate="{DataTemplate pages:AbsoluteLayoutPage}" -->
+    <!--         Route="AbsoluteLayoutPage" /> -->
+    <!-- -->
+    <!--     <ShellContent -->
+    <!--         Title="Flex Layout" -->
+    <!--         ContentTemplate="{DataTemplate pages:FlexLayoutPage}" -->
+    <!--         Route="FlexLayoutPage" /> -->
+    <!-- </FlyoutItem> -->
 
     <FlyoutItem
         Title="Controles"
