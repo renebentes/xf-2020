@@ -2,6 +2,7 @@ using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
 using Gallery.Primitives;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 
 namespace Gallery;
 
@@ -20,12 +21,14 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
-#if DEBUG
-        builder.Logging.AddDebug();
-#endif
+        AddDebugLogging(builder);
 
         return builder.Build();
     }
+
+    [Conditional("DEBUG")]
+    private static void AddDebugLogging(in MauiAppBuilder builder)
+        => builder.Logging.AddDebug();
 
     private static IServiceCollection AddTransientWithShellRoute<TPage, TViewModel>(this IServiceCollection services)
         where TPage : BasePage<TViewModel>
