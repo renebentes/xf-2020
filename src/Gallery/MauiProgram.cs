@@ -1,5 +1,6 @@
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
+using Gallery.Layouts;
 using Gallery.Primitives;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
@@ -32,9 +33,25 @@ public static class MauiProgram
     private static void AddDebugLogging(in MauiAppBuilder builder)
         => builder.Logging.AddDebug();
 
+    private static IServiceCollection AddLayoutsGallery(this IServiceCollection services)
+    {
+        services.AddTransient<LayoutsGalleryPage, LayoutsGalleryViewModel>();
+
+        services.AddTransientWithShellRoute<AbsoluteLayoutPage, AbsoluteLayoutViewModel>();
+        services.AddTransientWithShellRoute<FlexLayoutPage, FlexLayoutViewModel>();
+        services.AddTransientWithShellRoute<GridPage, GridViewModel>();
+        services.AddTransientWithShellRoute<HorizontalStackLayoutPage, HorizontalStackLayoutViewModel>();
+        services.AddTransientWithShellRoute<StackLayoutPage, StackLayoutViewModel>();
+        services.AddTransientWithShellRoute<VerticalStackLayoutPage, VerticalStackLayoutViewModel>();
+
+        return services;
+    }
+
     private static IServiceCollection AddPagesAndViewModels(this IServiceCollection services)
     {
         services.AddSingleton<AppShell>();
+
+        services.AddLayoutsGallery();
 
         return services;
     }

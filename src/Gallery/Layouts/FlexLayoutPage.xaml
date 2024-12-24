@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.FlexLayoutPage"
+<primitives:BasePage
+    x:Class="Gallery.Layouts.FlexLayoutPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="FlexLayoutPage">
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="FlexLayout"
+    x:DataType="layouts:FlexLayoutViewModel"
+    x:TypeArguments="layouts:FlexLayoutViewModel">
     <FlexLayout Direction="Column">
         <FlexLayout
             AlignItems="Stretch"
@@ -119,6 +123,5 @@
                 Margin="1"
                 BackgroundColor="Black" />
         </FlexLayout>
-
     </FlexLayout>
-</ContentPage>
+</primitives:BasePage>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.AbsoluteLayoutPage"
+<primitives:BasePage
+    x:Class="Gallery.Layouts.AbsoluteLayoutPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="AbsoluteLayoutPage">
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    x:DataType="layouts:AbsoluteLayoutViewModel"
+    x:TypeArguments="layouts:AbsoluteLayoutViewModel">
     <AbsoluteLayout BackgroundColor="AliceBlue">
         <BoxView
             AbsoluteLayout.LayoutBounds="0, 0, 100,30"
@@ -58,4 +61,4 @@
             TextColor="White"
             VerticalOptions="Center" />
     </AbsoluteLayout>
-</ContentPage>
+</primitives:BasePage>
