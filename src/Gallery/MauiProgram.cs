@@ -23,12 +23,21 @@ public static class MauiProgram
 
         AddDebugLogging(builder);
 
+        builder.Services.AddPagesAndViewModels();
+
         return builder.Build();
     }
 
     [Conditional("DEBUG")]
     private static void AddDebugLogging(in MauiAppBuilder builder)
         => builder.Logging.AddDebug();
+
+    private static IServiceCollection AddPagesAndViewModels(this IServiceCollection services)
+    {
+        services.AddSingleton<AppShell>();
+
+        return services;
+    }
 
     private static IServiceCollection AddTransientWithShellRoute<TPage, TViewModel>(this IServiceCollection services)
         where TPage : BasePage<TViewModel>

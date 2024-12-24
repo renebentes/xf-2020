@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="Gallery.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
     xmlns:pages="clr-namespace:Gallery.Pages"
     Title="Gallery">
 
@@ -33,37 +34,8 @@
 
     <FlyoutItem
         Title="Layouts"
-        FlyoutDisplayOptions="AsMultipleItems">
-
-        <ShellContent
-            Title="Stack Layout"
-            ContentTemplate="{DataTemplate pages:StackLayoutPage}"
-            Route="StackLayoutPage" />
-
-        <ShellContent
-            Title="Vertical Stack Layout"
-            ContentTemplate="{DataTemplate pages:VerticalStackLayoutPage}"
-            Route="VerticalStackLayoutPage" />
-
-        <ShellContent
-            Title="Horizontal Stack Layout"
-            ContentTemplate="{DataTemplate pages:HorizontalStackLayoutPage}"
-            Route="HorizontalStackLayoutPage" />
-
-        <ShellContent
-            Title="Grid"
-            ContentTemplate="{DataTemplate pages:GridPage}"
-            Route="GridPage" />
-
-        <ShellContent
-            Title="Absolute Layout"
-            ContentTemplate="{DataTemplate pages:AbsoluteLayoutPage}"
-            Route="AbsoluteLayoutPage" />
-
-        <ShellContent
-            Title="Flex Layout"
-            ContentTemplate="{DataTemplate pages:FlexLayoutPage}"
-            Route="FlexLayoutPage" />
+        Route="LayoutsGalleryPage">
+        <ShellContent ContentTemplate="{DataTemplate layouts:LayoutsGalleryPage}" />
     </FlyoutItem>
 
     <FlyoutItem
