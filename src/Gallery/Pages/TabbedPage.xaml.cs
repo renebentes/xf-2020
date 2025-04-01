@@ -1,7 +1,10 @@
+using Gallery.Primitives;
+
 namespace Gallery.Pages;
 
-public partial class TabbedPage : ContentPage
+public sealed partial class TabbedPage : BasePage<TabbedViewModel>
 {
-    public TabbedPage()
+    public TabbedPage(TabbedViewModel viewModel)
+        : base(viewModel)
         => InitializeComponent();
 }

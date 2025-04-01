@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Pages.ContentPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:pages="clr-namespace:Gallery.Pages"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    x:DataType="pages:ContentViewModel"
+    x:TypeArguments="pages:ContentViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                Source="logo.png" />
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="ContentPage" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="A ContentPage é a página principal de um aplicativo. A utilizamos para exibir todos os conteúdos" />
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/pages/contentpage" />
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

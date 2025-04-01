@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ScrollViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ScrollViewPage"
+    x:DataType="controls:ScrollViewViewModel"
+    x:TypeArguments="controls:ScrollViewViewModel">
+    <Grid
+        Margin="10"
+        ColumnDefinitions="*"
+        RowDefinitions="*,*"
+        RowSpacing="10">
+        <ScrollView
+            HorizontalScrollBarVisibility="Never"
+            Orientation="Both"
+            Scrolled="OnScrolled">
+            <VerticalStackLayout>
+                <BoxView
+                    BackgroundColor="Teal"
+                    HeightRequest="500"
+                    WidthRequest="500" />
+
+                <Label
+                    x:Name="Position"
+                    Text="Posição" />
+            </VerticalStackLayout>
+        </ScrollView>
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="10">
+                <ScrollView
+                    HorizontalScrollBarVisibility="Never"
+                    Orientation="Horizontal">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                        <BoxView
+                            BackgroundColor="PeachPuff"
+                            HeightRequest="50"
+                            WidthRequest="50" />
+                    </HorizontalStackLayout>
+                </ScrollView>
+
+                <Button Text="Ok" />
+
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nunc erat. Cras non orci metus. Mauris luctus velit non sem molestie, varius mattis purus tempor. Mauris eu est est. Morbi lacinia dolor vel sapien facilisis aliquam. Duis ultricies aliquet aliquet. Praesent condimentum gravida metus vel imperdiet. Duis posuere ante nisi, eu porttitor dui finibus vitae. Vestibulum porttitor eros ac sapien bibendum, at consequat lacus bibendum. Donec auctor dictum augue non eleifend. &#10;  Etiam dictum gravida iaculis. Donec porta augue ac commodo commodo. Ut tempus mi in ligula varius scelerisque. Aliquam dapibus, massa vel hendrerit consectetur, nisl elit accumsan augue, sit amet interdum justo ipsum a est. Nam id ex tellus. Proin aliquet nisi metus, ac iaculis ex consectetur a. Vestibulum tristique euismod interdum. Ut in turpis at est dignissim molestie. Aenean euismod, turpis eget euismod consectetur, sem velit vehicula justo, a pellentesque mauris nibh vitae sapien. Donec consectetur placerat pellentesque. Vestibulum rutrum augue a mauris ultricies egestas. Phasellus in nisi mauris. Pellentesque consectetur, ante ac bibendum venenatis, nulla neque blandit diam, vitae dictum nunc augue ut enim. Nulla molestie pharetra felis, ut laoreet metus efficitur ut. Cras eu aliquet orci.&#10;  Nullam iaculis rhoncus feugiat. Duis sed dignissim sem, ac molestie nibh. Praesent blandit vitae neque a luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse venenatis nunc ligula, quis ultrices nibh convallis ut. Proin ac nisl a nibh finibus posuere a sed orci. Nam tristique ac nulla ac vehicula. Vestibulum vel elit dolor. Nunc in eros at ante vestibulum venenatis eget non ante. Proin nec consectetur diam, pellentesque ultricies tellus. &#10;  Maecenas cursus, ex nec pulvinar lacinia, massa sem molestie tellus, nec blandit mi justo sit amet augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras efficitur facilisis diam sit amet malesuada. Nam quis nunc sed enim elementum rhoncus. Nunc ac nisl vehicula, eleifend mi rutrum, placerat tellus. Donec bibendum lobortis convallis. Suspendisse mattis, nulla ac posuere hendrerit, nulla ex accumsan felis, vel fermentum felis enim non velit. Proin ultricies libero a urna consequat sagittis. Phasellus sit amet justo eget mi convallis semper vel a sem. Mauris varius vulputate est lobortis porta. Duis porttitor maximus diam eu auctor. Fusce ultrices felis sed eros laoreet, ut suscipit erat ultrices. Integer et purus nec justo ullamcorper rhoncus. Pellentesque non sapien metus. &#10; Nulla ullamcorper tellus ut bibendum maximus. Etiam elementum porta eros, et porttitor nunc hendrerit a. Pellentesque laoreet, ligula sit amet elementum hendrerit, nunc arcu faucibus ex, ut mattis turpis velit nec ante. Vivamus eu neque in sapien suscipit egestas vel eget libero. Suspendisse lacus leo, hendrerit et mollis sagittis, malesuada nec tortor. Morbi tempor varius dui ut blandit. Phasellus malesuada mollis neque quis volutpat. Proin sed quam elit. Mauris euismod nunc aliquet neque semper porta. Mauris ultrices, risus id commodo placerat, ligula felis facilisis nibh, accumsan gravida tortor ante et ligula." />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</primitives:BasePage>

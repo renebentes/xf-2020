@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ContentViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ContentViewPage"
+    x:DataType="controls:ContentViewModel"
+    x:TypeArguments="controls:ContentViewModel">
+    <VerticalStackLayout>
+        <controls:HorizontalCard
+            Title="Notícia 1"
+            BackgroundColor="Gray"
+            Description="Texto 1" />
+        <controls:HorizontalCard
+            Title="Notícia 2"
+            BackgroundColor="Gray"
+            Description="Texto 2" />
+        <controls:HorizontalCard
+            Title="Notícia 3"
+            BackgroundColor="Black"
+            Description="Texto 3" />
+
+        <controls:DirectorCard
+            Name="Steven Spielberg"
+            BoxViewBackgroundColor="Aqua"
+            Description="Renomado Diretor" />
+
+        <controls:DirectorCard
+            Name="Zack Snyder"
+            BoxViewBackgroundColor="Yellow" />
+    </VerticalStackLayout>
+</primitives:BasePage>

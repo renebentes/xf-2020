@@ -11,4 +11,8 @@
     <GenerateErrorForMissingTargetingPacks>false</GenerateErrorForMissingTargetingPacks>
     <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
   </PropertyGroup>
+
+  <PropertyGroup Condition="$(TargetFramework.Contains('-android')) and $(Configuration) == 'Debug'">
+    <RuntimeIdentifiers>$(RuntimeIdentifiers);android-x86</RuntimeIdentifiers>
+  </PropertyGroup>
 </Project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Layouts.AbsoluteLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    x:DataType="layouts:AbsoluteLayoutViewModel"
+    x:TypeArguments="layouts:AbsoluteLayoutViewModel">
+    <AbsoluteLayout BackgroundColor="AliceBlue">
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 0, 100,30"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 0, 30,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="1, 0, 100,30"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="1, 0, 30,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 1, 100,30"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="0, 1, 30,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="1, 1, 100,30"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds="1, 1, 30,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="Gray" />
+
+        <BoxView
+            AbsoluteLayout.LayoutBounds=".5, .5, .5,.5"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="Gray" />
+
+        <Label
+            AbsoluteLayout.LayoutBounds=".5, .5, .5,.5"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Center"
+            Text="Absolute Layout"
+            TextColor="White"
+            VerticalOptions="Center" />
+    </AbsoluteLayout>
+</primitives:BasePage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Layouts.VerticalStackLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:layouts="clr-namespace:Gallery.Layouts"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    x:DataType="layouts:VerticalStackLayoutViewModel"
+    x:TypeArguments="layouts:VerticalStackLayoutViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="VerticalStackLayout" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Organiza exibições filhas em uma pilha vertical unidimensional e é uma alternativa de mais desempenho a um StackLayout." />
+
+            <VerticalStackLayout
+                Margin="20"
+                Spacing="6">
+                <Label
+                    BackgroundColor="Red"
+                    HorizontalOptions="Start"
+                    Text="Start" />
+                <Label
+                    BackgroundColor="Yellow"
+                    HorizontalOptions="Center"
+                    Text="Center" />
+                <Label
+                    BackgroundColor="Blue"
+                    HorizontalOptions="End"
+                    Text="End" />
+                <Label
+                    BackgroundColor="Green"
+                    HorizontalOptions="Fill"
+                    Text="Fill" />
+            </VerticalStackLayout>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/layouts/verticalstacklayout" />
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.EditorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="EditorPage"
+    x:DataType="controls:EditorViewModel"
+    x:TypeArguments="controls:EditorViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Editor" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Permite que você insira e edite várias linhas de texto." />
+
+            <Label
+                FontSize="18"
+                Text="Text, TextColor, AutoSize" />
+
+            <Editor
+                AutoSize="TextChanges"
+                Text="Texto simples"
+                TextColor="Blue" />
+
+            <Label
+                FontSize="18"
+                Text="Placeholder, PlaceholderColor" />
+
+            <Editor
+                Placeholder="Digite seu nome"
+                PlaceholderColor="LightBlue" />
+
+            <Label
+                FontSize="18"
+                Text="MaxLength, BackgroundColor" />
+
+            <Editor
+                BackgroundColor="LightBlue"
+                MaxLength="10" />
+
+            <Label
+                FontSize="18"
+                Text="IsReadOnly" />
+
+            <Editor
+                IsReadOnly="True"
+                Text="IsReadOnly" />
+
+            <Label
+                FontSize="18"
+                Text="Keyboard, KeyboardFlags" />
+
+            <Editor Keyboard="Chat" />
+
+            <Editor>
+                <Editor.Keyboard>
+                    <Keyboard x:FactoryMethod="Create">
+                        <x:Arguments>
+                            <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
+                        </x:Arguments>
+                    </Keyboard>
+                </Editor.Keyboard>
+            </Editor>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/editor" />
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ImagePage"
+    x:DataType="controls:ImageViewModel"
+    x:TypeArguments="controls:ImageViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Image" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Exibe uma imagem que pode ser carregada de um arquivo local, um URI ou um fluxo." />
+
+            <Label
+                FontSize="18"
+                Text="Carregamento Local" />
+            <Image Source="dotnet_bot.png" />
+
+            <Label
+                FontSize="18"
+                Text="Carregamento Remoto" />
+            <Image Source="https://aka.ms/campus.jpg" />
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/image" />
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>
