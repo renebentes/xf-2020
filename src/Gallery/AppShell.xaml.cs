@@ -1,3 +1,5 @@
+using Gallery.Layouts;
+using Gallery.Pages;
 using Gallery.Primitives;
 using System.Collections.ObjectModel;
 
@@ -10,6 +12,17 @@ public partial class AppShell : Shell
 {
     private static readonly ReadOnlyDictionary<Type, (Type GalleryPageType, Type ContentPageType)> _viewModelMappings =
         new Dictionary<Type, (Type GalleryPageType, Type ContentPageType)>([
+            CreateViewModelMapping<AbsoluteLayoutPage, AbsoluteLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<FlexLayoutPage, FlexLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<GridPage, GridViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<HorizontalStackLayoutPage, HorizontalStackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<StackLayoutPage, StackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<VerticalStackLayoutPage, VerticalStackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
+            CreateViewModelMapping<Pages.ContentPage, ContentViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
+            CreateViewModelMapping<Pages.FlyoutPage, FlyoutViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
+            CreateViewModelMapping<Pages.NavigationPage, NavigationViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
+            CreateViewModelMapping<Pages.TabbedPage, TabbedViewModel, PagesGalleryPage, PagesGalleryViewModel>()
+
         ]).AsReadOnly();
 
     public AppShell()

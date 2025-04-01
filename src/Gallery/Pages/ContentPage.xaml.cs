@@ -2,9 +2,9 @@ using Gallery.Primitives;
 
 namespace Gallery.Pages;
 
-public partial class FlyoutPage : BasePage<FlyoutViewModel>
+public partial class ContentPage : BasePage<ContentViewModel>
 {
-    public FlyoutPage(FlyoutViewModel viewModel)
+    public ContentPage(ContentViewModel viewModel)
         : base(viewModel)
         => InitializeComponent();
 }

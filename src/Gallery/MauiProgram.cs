@@ -1,6 +1,7 @@
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
 using Gallery.Layouts;
+using Gallery.Pages;
 using Gallery.Primitives;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
@@ -51,7 +52,21 @@ public static class MauiProgram
     {
         services.AddSingleton<AppShell>();
 
+        services.AddPagesGallery();
+
         services.AddLayoutsGallery();
+
+        return services;
+    }
+
+    private static IServiceCollection AddPagesGallery(this IServiceCollection services)
+    {
+        services.AddTransient<PagesGalleryPage, PagesGalleryViewModel>();
+
+        services.AddTransientWithShellRoute<Pages.NavigationPage, NavigationViewModel>();
+        services.AddTransientWithShellRoute<Pages.TabbedPage, TabbedViewModel>();
+        services.AddTransientWithShellRoute<Pages.ContentPage, ContentViewModel>();
+        services.AddTransientWithShellRoute<Pages.FlyoutPage, FlyoutViewModel>();
 
         return services;
     }

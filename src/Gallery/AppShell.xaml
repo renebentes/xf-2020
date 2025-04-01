@@ -9,27 +9,9 @@
 
     <FlyoutItem
         Title="Páginas"
-        FlyoutDisplayOptions="AsMultipleItems">
+        Route="PagesGalleryPage">
 
-        <ShellContent
-            Title="Content Page"
-            ContentTemplate="{DataTemplate pages:MainPage}"
-            Route="MainPage" />
-
-        <ShellContent
-            Title="Flyout Page"
-            ContentTemplate="{DataTemplate pages:FlyoutPage}"
-            Route="FlyoutPage" />
-
-        <ShellContent
-            Title="Navigation Page"
-            ContentTemplate="{DataTemplate pages:NavigationPage}"
-            Route="NavigationPage" />
-
-        <ShellContent
-            Title="Tabbed Page"
-            ContentTemplate="{DataTemplate pages:TabbedPage}"
-            Route="TabbedPage" />
+        <ShellContent ContentTemplate="{DataTemplate pages:PagesGalleryPage}" />
     </FlyoutItem>
 
     <FlyoutItem

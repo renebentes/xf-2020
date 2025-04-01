@@ -1,7 +1,10 @@
+using Gallery.Primitives;
+
 namespace Gallery.Pages;
 
-public partial class NavigationPage : ContentPage
+public partial class NavigationPage : BasePage<NavigationViewModel>
 {
-    public NavigationPage()
+    public NavigationPage(NavigationViewModel viewModel)
+        : base(viewModel)
         => InitializeComponent();
 }
