@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.LabelPage"
+<primitives:BasePage
+    x:Class="Gallery.Controls.LabelPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:Gallery.Controls"
-    Title="LabelPage">
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="LabelPage"
+    x:DataType="controls:LabelViewModel"
+    x:TypeArguments="controls:LabelViewModel">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -15,84 +18,84 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="Label" />
+                Text="Label"/>
 
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level2"
-                Text="Exibe texto de linha única ou de várias linhas. O texto exibido pode ser colorido, espaçado e ter decorações." />
+                Text="Exibe texto de linha única ou de várias linhas. O texto exibido pode ser colorido, espaçado e ter decorações."/>
 
             <Label
                 FontSize="18"
-                Text="TextDecorations" />
+                Text="TextDecorations"/>
 
             <Label
                 Text="Texto taxado"
-                TextDecorations="Strikethrough" />
+                TextDecorations="Strikethrough"/>
 
             <Label
                 Text="Texto sublinhado"
-                TextDecorations="Underline" />
+                TextDecorations="Underline"/>
 
             <Label
                 FontSize="18"
-                Text="CharacterSpacing" />
+                Text="CharacterSpacing"/>
 
             <Label
                 CharacterSpacing="-2"
-                Text="Texto com espaço entre carateres reduzido" />
+                Text="Texto com espaço entre carateres reduzido"/>
 
             <Label
                 CharacterSpacing="2"
-                Text="Texto com espaço entre carateres aumentado" />
+                Text="Texto com espaço entre carateres aumentado"/>
 
             <Label
                 FontSize="18"
-                Text="MaxLines" />
+                Text="MaxLines"/>
 
             <Label
                 MaxLines="3"
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."/>
 
             <Label
                 FontSize="18"
-                Text="LineBreakMode" />
+                Text="LineBreakMode"/>
 
             <Label
                 LineBreakMode="WordWrap"
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."/>
 
             <Label
                 LineBreakMode="NoWrap"
                 Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
-                TextColor="Green" />
+                TextColor="Green"/>
 
             <Label
                 LineBreakMode="CharacterWrap"
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."/>
 
             <Label
                 LineBreakMode="HeadTruncation"
                 Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
-                TextColor="Green" />
+                TextColor="Green"/>
 
             <Label
                 LineBreakMode="MiddleTruncation"
-                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet." />
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."/>
 
             <Label
                 LineBreakMode="TailTruncation"
                 Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu purus aliquam, ultricies nibh nec, bibendum nisl. Duis sit amet tortor nisl. Maecenas sed sagittis sem, eu dignissim mi. Vestibulum in lobortis ligula, eu lacinia libero. Vivamus in lacus vitae dui tincidunt scelerisque. Praesent eget mollis lacus, a vehicula magna. Aliquam eleifend urna eu ex consequat tristique. Mauris dictum finibus arcu et scelerisque. Morbi suscipit hendrerit varius. Duis tempor velit eget scelerisque imperdiet."
-                TextColor="Green" />
+                TextColor="Green"/>
 
             <Label
                 FontSize="18"
-                Text="HTML TextType" />
+                Text="HTML TextType"/>
 
             <Label
                 Text="Texto com estrutura &lt;strong&gt;HTML&lt;/&gt;"
-                TextType="Html" />
+                TextType="Html"/>
 
             <Label TextType="Html">
                 <![CDATA[
@@ -100,7 +103,7 @@
                 ]]>
             </Label>
 
-            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/label" />
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/label"/>
         </VerticalStackLayout>
     </ScrollView>
-</ContentPage>
+</primitives:BasePage>

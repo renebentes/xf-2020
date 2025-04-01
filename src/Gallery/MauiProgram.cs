@@ -1,5 +1,6 @@
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
+using Gallery.Controls;
 using Gallery.Layouts;
 using Gallery.Pages;
 using Gallery.Primitives;
@@ -56,6 +57,8 @@ public static class MauiProgram
 
         services.AddLayoutsGallery();
 
+        services.AddControlsGallery();
+
         return services;
     }
 
@@ -65,8 +68,27 @@ public static class MauiProgram
 
         services.AddTransientWithShellRoute<Pages.NavigationPage, NavigationViewModel>();
         services.AddTransientWithShellRoute<Pages.TabbedPage, TabbedViewModel>();
-        services.AddTransientWithShellRoute<Pages.ContentPage, ContentViewModel>();
+        services.AddTransientWithShellRoute<Pages.ContentPage, Pages.ContentViewModel>();
         services.AddTransientWithShellRoute<Pages.FlyoutPage, FlyoutViewModel>();
+
+        return services;
+    }
+
+    private static IServiceCollection AddControlsGallery(this IServiceCollection services)
+    {
+        services.AddTransient<ControlsGalleryPage, ControlsGalleryViewModel>();
+
+        services.AddTransientWithShellRoute<BorderPage, BorderViewModel>();
+        services.AddTransientWithShellRoute<BoxViewPage, BoxViewModel>();
+        services.AddTransientWithShellRoute<ButtonPage, ButtonViewModel>();
+        services.AddTransientWithShellRoute<ContentViewPage, Controls.ContentViewModel>();
+        services.AddTransientWithShellRoute<EditorPage, EditorViewModel>();
+        services.AddTransientWithShellRoute<EntryPage, EntryViewModel>();
+        services.AddTransientWithShellRoute<FramePage, FrameViewModel>();
+        services.AddTransientWithShellRoute<ImageButtonPage, ImageButtonViewModel>();
+        services.AddTransientWithShellRoute<ImagePage, ImageViewModel>();
+        services.AddTransientWithShellRoute<LabelPage, LabelViewModel>();
+        services.AddTransientWithShellRoute<ScrollViewPage, ScrollViewViewModel>();
 
         return services;
     }

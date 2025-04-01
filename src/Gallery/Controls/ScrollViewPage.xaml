@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.ScrollViewPage"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ScrollViewPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ScrollViewPage">
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ScrollViewPage"
+    x:DataType="controls:ScrollViewViewModel"
+    x:TypeArguments="controls:ScrollViewViewModel">
     <Grid
         Margin="10"
         ColumnDefinitions="*"
@@ -84,4 +88,4 @@
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
-</ContentPage>
+</primitives:BasePage>

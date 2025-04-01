@@ -1,3 +1,4 @@
+using Gallery.Controls;
 using Gallery.Layouts;
 using Gallery.Pages;
 using Gallery.Primitives;
@@ -18,11 +19,21 @@ public partial class AppShell : Shell
             CreateViewModelMapping<HorizontalStackLayoutPage, HorizontalStackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
             CreateViewModelMapping<StackLayoutPage, StackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
             CreateViewModelMapping<VerticalStackLayoutPage, VerticalStackLayoutViewModel, LayoutsGalleryPage, LayoutsGalleryViewModel>(),
-            CreateViewModelMapping<Pages.ContentPage, ContentViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
+            CreateViewModelMapping<Pages.ContentPage, Pages.ContentViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
             CreateViewModelMapping<Pages.FlyoutPage, FlyoutViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
             CreateViewModelMapping<Pages.NavigationPage, NavigationViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
-            CreateViewModelMapping<Pages.TabbedPage, TabbedViewModel, PagesGalleryPage, PagesGalleryViewModel>()
-
+            CreateViewModelMapping<Pages.TabbedPage, TabbedViewModel, PagesGalleryPage, PagesGalleryViewModel>(),
+            CreateViewModelMapping<BorderPage, BorderViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<BoxViewPage, BoxViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ButtonPage, ButtonViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ContentViewPage, Controls.ContentViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<EditorPage, EditorViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<EntryPage, EntryViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<FramePage, FrameViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ImageButtonPage, ImageButtonViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ImagePage, ImageViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<LabelPage, LabelViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ScrollViewPage, ScrollViewViewModel, ControlsGalleryPage, ControlsGalleryViewModel>()
         ]).AsReadOnly();
 
     public AppShell()

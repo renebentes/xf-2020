@@ -1,10 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.ButtonPage"
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ButtonPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:Gallery.Controls"
-    Title="ButtonPage">
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ButtonPage"
+    x:DataType="controls:ButtonViewModel"
+    x:TypeArguments="controls:ButtonViewModel">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -55,12 +58,16 @@
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="Scale" Value="1" />
+                                <Setter
+                                    Property="Scale"
+                                    Value="1" />
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState x:Name="Pressed">
                             <VisualState.Setters>
-                                <Setter Property="Scale" Value="0.8" />
+                                <Setter
+                                    Property="Scale"
+                                    Value="0.8" />
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
@@ -70,4 +77,4 @@
             <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/button" />
         </VerticalStackLayout>
     </ScrollView>
-</ContentPage>
+</primitives:BasePage>

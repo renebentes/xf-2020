@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.EditorPage"
+<primitives:BasePage
+    x:Class="Gallery.Controls.EntryPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:Gallery.Controls"
-    Title="EditorPage">
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="EntryPage"
+    x:DataType="controls:EntryViewModel"
+    x:TypeArguments="controls:EntryViewModel">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -15,20 +18,19 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="Editor" />
+                Text="Entry" />
 
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level2"
-                Text="Permite que você insira e edite várias linhas de texto." />
+                Text="Permite que você insira e edite uma única linha de texto." />
 
             <Label
                 FontSize="18"
-                Text="Text, TextColor, AutoSize" />
+                Text="Text, TextColor" />
 
-            <Editor
-                AutoSize="TextChanges"
+            <Entry
                 Text="Texto simples"
                 TextColor="Blue" />
 
@@ -36,7 +38,7 @@
                 FontSize="18"
                 Text="Placeholder, PlaceholderColor" />
 
-            <Editor
+            <Entry
                 Placeholder="Digite seu nome"
                 PlaceholderColor="LightBlue" />
 
@@ -44,35 +46,41 @@
                 FontSize="18"
                 Text="MaxLength, BackgroundColor" />
 
-            <Editor
+            <Entry
                 BackgroundColor="LightBlue"
                 MaxLength="10" />
 
             <Label
                 FontSize="18"
-                Text="IsReadOnly" />
+                Text="IsReadOnly, IsPassword" />
 
-            <Editor
-                IsReadOnly="True"
-                Text="IsReadOnly" />
+            <Entry
+                IsPassword="True"
+                IsReadOnly="True" />
 
             <Label
                 FontSize="18"
-                Text="Keyboard, KeyboardFlags" />
+                Text="ClearButtonVisibility" />
 
-            <Editor Keyboard="Chat" />
+            <Entry ClearButtonVisibility="WhileEditing" />
 
-            <Editor>
-                <Editor.Keyboard>
+            <Label
+                FontSize="18"
+                Text="Keyboard, KeyboardFlags, ReturnType" />
+
+            <Entry Keyboard="Chat" />
+
+            <Entry ReturnType="Send">
+                <Entry.Keyboard>
                     <Keyboard x:FactoryMethod="Create">
                         <x:Arguments>
                             <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
                         </x:Arguments>
                     </Keyboard>
-                </Editor.Keyboard>
-            </Editor>
+                </Entry.Keyboard>
+            </Entry>
 
-            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/editor" />
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/entry" />
         </VerticalStackLayout>
     </ScrollView>
-</ContentPage>
+</primitives:BasePage>

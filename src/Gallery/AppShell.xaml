@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="Gallery.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
     xmlns:layouts="clr-namespace:Gallery.Layouts"
     xmlns:pages="clr-namespace:Gallery.Pages"
     Title="Gallery">
@@ -22,60 +23,7 @@
 
     <FlyoutItem
         Title="Controles"
-        FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent
-            Title="Scroll"
-            ContentTemplate="{DataTemplate pages:ScrollViewPage}"
-            Route="ScrollViewPage" />
-
-        <ShellContent
-            Title="Content View"
-            ContentTemplate="{DataTemplate pages:ContentViewPage}"
-            Route="ContentViewPage" />
-
-        <ShellContent
-            Title="Frame"
-            ContentTemplate="{DataTemplate pages:FramePage}"
-            Route="FramePage" />
-
-        <ShellContent
-            Title="Border"
-            ContentTemplate="{DataTemplate pages:BorderPage}"
-            Route="BorderPage" />
-
-        <ShellContent
-            Title="BoxView"
-            ContentTemplate="{DataTemplate pages:BoxViewPage}"
-            Route="BoxViewPage" />
-
-        <ShellContent
-            Title="Label"
-            ContentTemplate="{DataTemplate pages:LabelPage}"
-            Route="LabelPage" />
-
-        <ShellContent
-            Title="Button"
-            ContentTemplate="{DataTemplate pages:ButtonPage}"
-            Route="ButtonPage" />
-
-        <ShellContent
-            Title="ImageButton"
-            ContentTemplate="{DataTemplate pages:ImageButtonPage}"
-            Route="ImageButtonPage" />
-
-        <ShellContent
-            Title="Image"
-            ContentTemplate="{DataTemplate pages:ImagePage}"
-            Route="ImagePage" />
-
-        <ShellContent
-            Title="Entry"
-            ContentTemplate="{DataTemplate pages:EntryPage}"
-            Route="EntryPage" />
-
-        <ShellContent
-            Title="Editor"
-            ContentTemplate="{DataTemplate pages:EditorPage}"
-            Route="EditorPage" />
+        Route="ControlsGalleryPage">
+        <ShellContent ContentTemplate="{DataTemplate controls:ControlsGalleryPage}" />
     </FlyoutItem>
 </Shell>

@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="Gallery.Pages.ImagePage"
+<primitives:BasePage
+    x:Class="Gallery.Controls.ImagePage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:Gallery.Controls"
-    Title="ImagePage">
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="ImagePage"
+    x:DataType="controls:ImageViewModel"
+    x:TypeArguments="controls:ImageViewModel">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -36,4 +39,4 @@
             <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/image" />
         </VerticalStackLayout>
     </ScrollView>
-</ContentPage>
+</primitives:BasePage>
