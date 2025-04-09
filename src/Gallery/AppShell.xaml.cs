@@ -55,7 +55,7 @@ public partial class AppShell : Shell
             throw new KeyNotFoundException($"No map for ${viewModelType} was found on navigation mappings. Please register your ViewModel in {nameof(AppShell)}.{nameof(_viewModelMappings)}");
         }
 
-        var uri = new UriBuilder("", GetPageRoute(mapping.GalleryPageType, mapping.ContentPageType));
+        var uri = new UriBuilder(string.Empty, GetPageRoute(mapping.GalleryPageType, mapping.ContentPageType));
         return uri.Uri.OriginalString[..^1];
     }
 
