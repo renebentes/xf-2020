@@ -9,6 +9,12 @@
     Title="Gallery">
 
     <FlyoutItem
+        Title="Bem-vindo"
+        Route="WelcomePage">
+        <ShellContent ContentTemplate="{DataTemplate pages:WelcomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
         Title="Páginas"
         Route="PagesGalleryPage">
 
