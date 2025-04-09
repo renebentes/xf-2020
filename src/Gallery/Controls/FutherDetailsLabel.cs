@@ -48,7 +48,7 @@ public class FurtherDetailsLabel : Label
 
         if (bindable is FurtherDetailsLabel furtherDetailsLabel)
         {
-            ((HyperlinkSpan)furtherDetailsLabel.FormattedText.Spans[1]).Url = newValue.ToString();
+            ((HyperlinkSpan)furtherDetailsLabel.FormattedText.Spans[1]).Url = newValue.ToString() ?? string.Empty;
         }
     }
 }
