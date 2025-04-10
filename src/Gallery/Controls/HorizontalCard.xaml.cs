@@ -2,9 +2,9 @@ namespace Gallery.Controls;
 
 public partial class HorizontalCard : ContentView
 {
-    private Color _backgroundColor;
-    private string _description;
-    private string _title;
+    private Color _backgroundColor = new();
+    private string _description = string.Empty;
+    private string _title = string.Empty;
 
     public HorizontalCard()
         => InitializeComponent();
