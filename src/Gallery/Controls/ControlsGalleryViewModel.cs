@@ -4,17 +4,17 @@ public sealed partial class ControlsGalleryViewModel : BaseGalleryViewModel
 {
     public ControlsGalleryViewModel()
         : base([
-            Section.Create<BorderViewModel>(nameof(BorderPage), string.Empty),
-            Section.Create<BoxViewModel>(nameof(BoxViewPage), string.Empty),
-            Section.Create<ButtonViewModel>(nameof(ButtonPage), string.Empty),
-            Section.Create<ContentViewModel>(nameof(ContentViewPage),string.Empty),
-            Section.Create<EditorViewModel>(nameof(EditorPage), string.Empty),
-            Section.Create<EntryViewModel>(nameof(EntryPage), string.Empty),
-            Section.Create<FrameViewModel>(nameof(FramePage), string.Empty),
-            Section.Create<ImageButtonViewModel>(nameof(ImageButtonPage), string.Empty),
-            Section.Create<ImageViewModel>(nameof(ImagePage), string.Empty),
-            Section.Create<LabelViewModel>(nameof(LabelPage), string.Empty),
-            Section.Create<ScrollViewViewModel>(nameof(ScrollViewPage), string.Empty)])
+            Section.Create<BorderViewModel>("Border", "Desenha uma borda, plano de fundo ou ambos."),
+            Section.Create<BoxViewModel>("BoxView", "Desenha um retângulo ou quadrado."),
+            Section.Create<ButtonViewModel>("Button", "Exibe um texto que responde a um comando."),
+            Section.Create<ContentViewModel>("ContentView","Permite criar controles personalizados."),
+            Section.Create<EditorViewModel>("Editor", "Exibe um campo multilinha de texto editável."),
+            Section.Create<EntryViewModel>("Entry", "Exibe um campo de texto editável."),
+            Section.Create<FrameViewModel>("Frame", "Desenha uma borda em torno de um controle."),
+            Section.Create<ImageButtonViewModel>("ImageButton", "Exibe uma imagem que responde a um comando."),
+            Section.Create<ImageViewModel>("Image", "Exibe uma imagem."),
+            Section.Create<LabelViewModel>("Label", "Exibe um texto."),
+            Section.Create<ScrollViewViewModel>("ScrollView", "Permite rolar o conteúdo."),])
     {
     }
 }
