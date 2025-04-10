@@ -31,6 +31,25 @@ public static class MauiProgram
         return builder.Build();
     }
 
+    private static IServiceCollection AddControlsGallery(this IServiceCollection services)
+    {
+        services.AddTransient<ControlsGalleryPage, ControlsGalleryViewModel>();
+
+        services.AddTransientWithShellRoute<BorderPage, BorderViewModel>();
+        services.AddTransientWithShellRoute<BoxViewPage, BoxViewModel>();
+        services.AddTransientWithShellRoute<ButtonPage, ButtonViewModel>();
+        services.AddTransientWithShellRoute<ContentViewPage, Controls.ContentViewModel>();
+        services.AddTransientWithShellRoute<EditorPage, EditorViewModel>();
+        services.AddTransientWithShellRoute<EntryPage, EntryViewModel>();
+        services.AddTransientWithShellRoute<FramePage, FrameViewModel>();
+        services.AddTransientWithShellRoute<ImageButtonPage, ImageButtonViewModel>();
+        services.AddTransientWithShellRoute<ImagePage, ImageViewModel>();
+        services.AddTransientWithShellRoute<LabelPage, LabelViewModel>();
+        services.AddTransientWithShellRoute<ScrollViewPage, ScrollViewViewModel>();
+
+        return services;
+    }
+
     [Conditional("DEBUG")]
     private static void AddDebugLogging(in MauiAppBuilder builder)
         => builder.Logging.AddDebug();
@@ -70,25 +89,6 @@ public static class MauiProgram
         services.AddTransientWithShellRoute<Pages.TabbedPage, TabbedViewModel>();
         services.AddTransientWithShellRoute<Pages.ContentPage, Pages.ContentViewModel>();
         services.AddTransientWithShellRoute<Pages.FlyoutPage, FlyoutViewModel>();
-
-        return services;
-    }
-
-    private static IServiceCollection AddControlsGallery(this IServiceCollection services)
-    {
-        services.AddTransient<ControlsGalleryPage, ControlsGalleryViewModel>();
-
-        services.AddTransientWithShellRoute<BorderPage, BorderViewModel>();
-        services.AddTransientWithShellRoute<BoxViewPage, BoxViewModel>();
-        services.AddTransientWithShellRoute<ButtonPage, ButtonViewModel>();
-        services.AddTransientWithShellRoute<ContentViewPage, Controls.ContentViewModel>();
-        services.AddTransientWithShellRoute<EditorPage, EditorViewModel>();
-        services.AddTransientWithShellRoute<EntryPage, EntryViewModel>();
-        services.AddTransientWithShellRoute<FramePage, FrameViewModel>();
-        services.AddTransientWithShellRoute<ImageButtonPage, ImageButtonViewModel>();
-        services.AddTransientWithShellRoute<ImagePage, ImageViewModel>();
-        services.AddTransientWithShellRoute<LabelPage, LabelViewModel>();
-        services.AddTransientWithShellRoute<ScrollViewPage, ScrollViewViewModel>();
 
         return services;
     }
