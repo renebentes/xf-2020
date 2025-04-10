@@ -1,7 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Layouts;
 
-public partial class GridViewModel : BaseViewModel
-{
-}
+public partial class GridViewModel : BaseViewModel;

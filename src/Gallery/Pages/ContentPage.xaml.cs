@@ -1,5 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Pages;
 
 public partial class ContentPage : BasePage<ContentViewModel>

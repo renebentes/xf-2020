@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace Gallery.Primitives;
 
 public abstract class BasePage : ContentPage

@@ -1,8 +1,8 @@
-using CommunityToolkit.Maui.Markup;
+using MauiControls = Microsoft.Maui.Controls;
 
 namespace Gallery.Pages;
 
-public sealed partial class WelcomePage : Microsoft.Maui.Controls.ContentPage
+public sealed partial class WelcomePage : MauiControls.ContentPage
 {
     public WelcomePage()
     {

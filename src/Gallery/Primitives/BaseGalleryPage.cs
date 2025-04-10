@@ -1,5 +1,3 @@
-using CommunityToolkit.Maui.Markup;
-
 namespace Gallery.Primitives;
 
 public abstract partial class BaseGalleryPage<TViewModel>

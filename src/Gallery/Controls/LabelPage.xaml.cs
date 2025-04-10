@@ -1,5 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Controls;
 
 public partial class LabelPage : BasePage<LabelViewModel>

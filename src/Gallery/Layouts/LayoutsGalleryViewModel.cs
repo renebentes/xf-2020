@@ -1,5 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Layouts;
 
 public sealed partial class LayoutsGalleryViewModel() : BaseGalleryViewModel(

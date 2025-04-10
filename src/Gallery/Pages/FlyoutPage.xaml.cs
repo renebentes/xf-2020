@@ -1,5 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Pages;
 
 public partial class FlyoutPage : BasePage<FlyoutViewModel>

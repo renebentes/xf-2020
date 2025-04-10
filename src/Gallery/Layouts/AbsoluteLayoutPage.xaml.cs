@@ -1,5 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Layouts;
 
 public partial class AbsoluteLayoutPage : BasePage<AbsoluteLayoutViewModel>

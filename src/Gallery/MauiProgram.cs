@@ -1,11 +1,11 @@
-using CommunityToolkit.Maui;
-using CommunityToolkit.Maui.Markup;
+global using CommunityToolkit.Maui;
+global using CommunityToolkit.Maui.Markup;
+global using Gallery.Primitives;
+global using System.Diagnostics;
 using Gallery.Controls;
 using Gallery.Layouts;
 using Gallery.Pages;
-using Gallery.Primitives;
 using Microsoft.Extensions.Logging;
-using System.Diagnostics;
 
 namespace Gallery;
 

@@ -1,7 +1,6 @@
 using Gallery.Controls;
 using Gallery.Layouts;
 using Gallery.Pages;
-using Gallery.Primitives;
 using System.Collections.ObjectModel;
 
 namespace Gallery;

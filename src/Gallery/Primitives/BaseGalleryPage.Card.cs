@@ -1,4 +1,3 @@
-using CommunityToolkit.Maui.Markup;
 using static CommunityToolkit.Maui.Markup.GridRowsColumns;
 
 namespace Gallery.Primitives;

@@ -1,7 +1,3 @@
-using Gallery.Primitives;
-
 namespace Gallery.Layouts;
 
-public partial class VerticalStackLayoutViewModel : BaseViewModel
-{
-}
+public partial class VerticalStackLayoutViewModel : BaseViewModel;
