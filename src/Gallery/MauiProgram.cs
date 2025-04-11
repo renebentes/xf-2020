@@ -39,6 +39,7 @@ public static class MauiProgram
         services.AddTransientWithShellRoute<BoxViewPage, BoxViewModel>();
         services.AddTransientWithShellRoute<ButtonPage, ButtonViewModel>();
         services.AddTransientWithShellRoute<ContentViewPage, Controls.ContentViewModel>();
+        services.AddTransientWithShellRoute<CheckBoxPage, CheckBoxViewModel>();
         services.AddTransientWithShellRoute<EditorPage, EditorViewModel>();
         services.AddTransientWithShellRoute<EntryPage, EntryViewModel>();
         services.AddTransientWithShellRoute<FramePage, FrameViewModel>();
