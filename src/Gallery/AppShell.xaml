@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="Gallery.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -6,7 +6,9 @@
     xmlns:controls="clr-namespace:Gallery.Controls"
     xmlns:layouts="clr-namespace:Gallery.Layouts"
     xmlns:pages="clr-namespace:Gallery.Pages"
-    Title="Gallery">
+    Title="Gallery"
+    FlyoutBehavior="{OnPlatform WinUI=Locked,
+                                Default=Flyout}">
 
     <FlyoutItem
         Title="Bem-vindo"
