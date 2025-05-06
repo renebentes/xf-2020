@@ -16,5 +16,6 @@ public sealed partial class ControlsGalleryViewModel()
         Section.Create<ImageViewModel>(nameof(Image), "Exibe uma imagem."),
         Section.Create<LabelViewModel>(nameof(Label), "Exibe um texto."),
         Section.Create<ScrollViewViewModel>(nameof(ScrollView), "Permite rolar o conteúdo."),
-        Section.Create<CheckBoxViewModel>(nameof(CheckBox), "Exibe uma caixa de seleção.")
+        Section.Create<CheckBoxViewModel>(nameof(CheckBox), "Exibe uma caixa de seleção."),
+        Section.Create<RadioButtonViewModel>(nameof(RadioButton), "Exibe um botão de opção."),
     ]);
