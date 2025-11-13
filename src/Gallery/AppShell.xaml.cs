@@ -34,7 +34,8 @@ public partial class AppShell : Shell
             CreateViewModelMapping<ImagePage, ImageViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<LabelPage, LabelViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<RadioButtonPage, RadioButtonViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
-            CreateViewModelMapping<ScrollViewPage, ScrollViewViewModel, ControlsGalleryPage, ControlsGalleryViewModel>()
+            CreateViewModelMapping<ScrollViewPage, ScrollViewViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<SwitchPage, SwitchViewModel, ControlsGalleryPage, ControlsGalleryViewModel>()
         ]).AsReadOnly();
 
     public AppShell()

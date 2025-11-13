@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.SwitchPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="Switch"
+    x:DataType="controls:SwitchViewModel"
+    x:TypeArguments="controls:SwitchViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Switch" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Permite ao usuário alternar entre dois estados, como ligado/desligado." />
+
+            <Label
+                FontSize="18"
+                Text="Switch básico" />
+
+            <Switch />
+
+            <Label
+                FontSize="18"
+                Text="Switch ligado por padrão" />
+
+            <Switch IsToggled="True" />
+
+            <Label
+                FontSize="18"
+                Text="Switch com cores personalizadas" />
+
+            <Switch
+                OnColor="Green"
+                ThumbColor="White" />
+
+            <Label
+                FontSize="18"
+                Text="Switch com associação de dados e eventos" />
+
+            <Switch x:Name="dataSwitch" />
+
+            <Label>
+                <Label.Triggers>
+                    <DataTrigger
+                        x:DataType="Switch"
+                        Binding="{Binding Source={x:Reference dataSwitch}, Path=IsToggled}"
+                        TargetType="Label"
+                        Value="true">
+                        <Setter
+                            Property="Text"
+                            Value="Switch está LIGADO" />
+                        <Setter
+                            Property="TextColor"
+                            Value="Green" />
+                    </DataTrigger>
+                    <DataTrigger
+                        x:DataType="Switch"
+                        Binding="{Binding Source={x:Reference dataSwitch}, Path=IsToggled}"
+                        TargetType="Label"
+                        Value="false">
+                        <Setter
+                            Property="Text"
+                            Value="Switch está DESLIGADO" />
+                        <Setter
+                            Property="TextColor"
+                            Value="Red" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/switch" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

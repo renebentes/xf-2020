@@ -48,6 +48,7 @@ public static class MauiProgram
         services.AddTransientWithShellRoute<LabelPage, LabelViewModel>();
         services.AddTransientWithShellRoute<RadioButtonPage, RadioButtonViewModel>();
         services.AddTransientWithShellRoute<ScrollViewPage, ScrollViewViewModel>();
+        services.AddTransientWithShellRoute<SwitchPage, SwitchViewModel>();
 
         return services;
     }
