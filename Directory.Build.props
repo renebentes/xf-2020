@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <NetVersion>net9.0</NetVersion>
-    <MauiVersion>9.0.21</MauiVersion>
+    <MauiVersion>9.0.120</MauiVersion>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
