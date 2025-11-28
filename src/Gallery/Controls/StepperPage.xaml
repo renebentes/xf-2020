@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.StepperPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Title="Stepper"
+    x:DataType="controls:StepperViewModel"
+    x:TypeArguments="controls:StepperViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Stepper" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Consiste em dois botões rotulados com sinais de menos e mais e, que permite que um valor numérico seja selecionado de um intervalo de valores." />
+
+            <Label
+                FontSize="18"
+                Text="Increment, Minimum, Maximum, Value" />
+
+            <Stepper
+                Increment="5"
+                Maximum="25"
+                Minimum="0" />
+
+            <Label
+                FontSize="18"
+                Text="Associação de dados, disparo de eventos" />
+
+            <Stepper
+                x:Name="Stepper"
+                Increment="1">
+                <Stepper.Behaviors>
+                    <toolkit:EventToCommandBehavior
+                        x:TypeArguments="system:EventArgs"
+                        BindingContext="{Binding Path=BindingContext, Source={x:Reference Stepper}, x:DataType=Stepper}"
+                        Command="{Binding IncrementCommand}"
+                        EventName="ValueChanged" />
+                </Stepper.Behaviors>
+            </Stepper>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Você anterior: " />
+                        <Span Text="{Binding PreviousValue}" />
+                        <Span Text=" Valor atual: " />
+                        <Span Text="{Binding CurrentValue}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/stepper" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

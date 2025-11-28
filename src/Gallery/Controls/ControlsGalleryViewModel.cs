@@ -19,4 +19,5 @@ public sealed partial class ControlsGalleryViewModel()
         Section.Create<CheckBoxViewModel>(nameof(CheckBox), "Exibe uma caixa de seleção."),
         Section.Create<RadioButtonViewModel>(nameof(RadioButton), "Exibe um botão de opção."),
         Section.Create<SwitchViewModel>(nameof(Microsoft.Maui.Controls.Switch), "Permite alternar entre dois estados, como ligado/desligado."),
+        Section.Create<StepperViewModel>(nameof(Stepper), "Permite selecionar um valor numérico dentro de um intervalo.")
     ]);
