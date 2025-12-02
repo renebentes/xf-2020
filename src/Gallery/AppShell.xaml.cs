@@ -39,7 +39,10 @@ public partial class AppShell : Shell
             CreateViewModelMapping<ScrollViewPage, ScrollViewViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<SliderPage, SliderViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<StepperPage, StepperViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
-            CreateViewModelMapping<SwitchPage, SwitchViewModel, ControlsGalleryPage, ControlsGalleryViewModel>()
+            CreateViewModelMapping<SwitchPage, SwitchViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<TimePickerPage, TimePickerViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ActivityIndicatorPage, ActivityIndicatorViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<ProgressBarPage, ProgressBarViewModel, ControlsGalleryPage, ControlsGalleryViewModel>()
         ]).AsReadOnly();
 
     public AppShell()

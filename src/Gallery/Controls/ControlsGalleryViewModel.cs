@@ -22,5 +22,8 @@ public sealed partial class ControlsGalleryViewModel()
         Section.Create<StepperViewModel>(nameof(Stepper), "Permite selecionar um valor numérico dentro de um intervalo."),
         Section.Create<SliderViewModel>(nameof(Slider), "Exibe uma barra deslizante que permite selecionar um valor numérico em um intervalo contínuo."),
         Section.Create<PickerViewModel>(nameof(Picker), "Exibe uma lista de valores para seleção."),
-        Section.Create<DatePickerViewModel>(nameof(DatePicker), "Exibe o seletor de data por plataforma.")
+        Section.Create<DatePickerViewModel>(nameof(DatePicker), "Exibe o seletor de data por plataforma."),
+        Section.Create<TimePickerViewModel>(nameof(TimePicker), "Exibe o seletor de horário por plataforma."),
+        Section.Create<ActivityIndicatorViewModel>(nameof(ActivityIndicator), "Exibe uma animação indicativa de que o aplicativo está ocupado."),
+        Section.Create<ProgressBarViewModel>(nameof(ProgressBar), "Exibe uma barra de progresso relacionada a uma atividade do aplicativo.")
     ]);

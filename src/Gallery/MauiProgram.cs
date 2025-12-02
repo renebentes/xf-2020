@@ -53,6 +53,9 @@ public static class MauiProgram
         services.AddTransientWithShellRoute<SliderPage, SliderViewModel>();
         services.AddTransientWithShellRoute<StepperPage, StepperViewModel>();
         services.AddTransientWithShellRoute<SwitchPage, SwitchViewModel>();
+        services.AddTransientWithShellRoute<TimePickerPage, TimePickerViewModel>();
+        services.AddTransientWithShellRoute<ActivityIndicatorPage, ActivityIndicatorViewModel>();
+        services.AddTransientWithShellRoute<ProgressBarPage, ProgressBarViewModel>();
 
         return services;
     }

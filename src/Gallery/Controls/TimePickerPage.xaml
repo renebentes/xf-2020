@@ -1,12 +1,13 @@
-﻿<primitives:BasePage
-    x:Class="Gallery.Controls.DatePickerPage"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.TimePickerPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:Gallery.Controls"
     xmlns:primitives="clr-namespace:Gallery.Primitives"
-    Title="DatePicker"
-    x:DataType="controls:DatePickerViewModel"
-    x:TypeArguments="controls:DatePickerViewModel">
+    Title="TimePicker"
+    x:DataType="controls:TimePickerViewModel"
+    x:TypeArguments="controls:TimePickerViewModel">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -17,26 +18,23 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="DatePicker"/>
+                Text="TimePicker" />
 
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level2"
-                Text="Exibe o seletor de datas da plataforma, permitindo sua seleção."/>
+                Text="Exibe o seletor de horário da plataforma, permitindo sua seleção." />
 
             <Label
                 FontSize="18"
-                Text="Date, MinimumDate, MaximumDate"/>
+                Text="Time, Format" />
 
-            <DatePicker
-                Date="{Binding SelectedDate}"
-                MaximumDate="{Binding MaximumDate}"
-                MinimumDate="{Binding MinimumDate}"/>
+            <TimePicker
+                Format="HH:mm"
+                Time="{Binding SelectedTime}" />
 
-            <Label Text="{Binding SelectedDate, StringFormat='{0:dd/MM/yyyy}'}"/>
-
-            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/datepicker"/>
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/timepicker" />
         </VerticalStackLayout>
     </ScrollView>
 </primitives:BasePage>

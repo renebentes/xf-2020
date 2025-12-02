@@ -1,5 +1,3 @@
-using Javax.Crypto;
-
 namespace Gallery.Controls;
 
 public partial class DatePickerPage

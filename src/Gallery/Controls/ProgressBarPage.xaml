@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.ProgressBarPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Title="ProgressBar"
+    x:DataType="controls:ProgressBarViewModel"
+    x:TypeArguments="controls:ProgressBarViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="ProgressBar" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Indica que o aplicativo está progredindo por meio de uma atividade muito longa." />
+
+            <Label
+                FontSize="18"
+                Text="Progress, ProgressColor" />
+
+            <ProgressBar
+                Progress="0.5"
+                ProgressColor="OrangeRed" />
+
+            <Label
+                FontSize="18"
+                Text="Behavior" />
+
+            <ProgressBar x:Name="progressBar">
+                <ProgressBar.Behaviors>
+                    <toolkit:ProgressBarAnimationBehavior
+                        BindingContext="{Binding Path=BindingContext, Source={x:Reference progressBar}, x:DataType=ProgressBar}"
+                        Length="500"
+                        Progress="{Binding Progress}" />
+                </ProgressBar.Behaviors>
+            </ProgressBar>
+
+            <Button
+                Command="{Binding ProcessCommand}"
+                Text="Processar" />
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/progressbar" />
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>
