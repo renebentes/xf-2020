@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<primitives:BasePage
+    x:Class="Gallery.Controls.SliderPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="Slider"
+    x:DataType="controls:SliderViewModel"
+    x:TypeArguments="controls:SliderViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Slider" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="É uma barra horizontal que você pode manipular para selecionar um valor numérico de um intervalo contínuo." />
+
+            <Label
+                FontSize="18"
+                Text="Minimum, Maximum, Value" />
+
+            <Slider
+                Maximum="5"
+                Minimum="0"
+                Value="3" />
+
+            <Label
+                FontSize="18"
+                Text="MinimumTrackColor, Maximum, Value" />
+
+            <Slider
+                MaximumTrackColor="DarkBlue"
+                MinimumTrackColor="Red"
+                ThumbColor="Green"
+                Value="3" />
+
+            <Label
+                FontSize="18"
+                Text="MinimumTrackColor, Maximum, Value" />
+
+            <Slider ThumbImageSource="paper_plane.png" />
+
+            <Label
+                FontSize="18"
+                Text="Associação de dados, disparo de eventos" />
+
+            <Label
+                HorizontalOptions="Center"
+                Rotation="{Binding x:DataType=Slider, Source={x:Reference slider}, Path=Value}"
+                Text="TEXTO GIRATÓRIO"
+                VerticalOptions="Center" />
+
+            <Slider
+                x:Name="slider"
+                Maximum="360" />
+
+            <Label Text="{Binding x:DataType=Slider, Source={x:Reference slider}, Path=Value, StringFormat='O valor atual é de {0:F0}'}" />
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/slider" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>
