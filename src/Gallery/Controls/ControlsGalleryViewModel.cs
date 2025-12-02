@@ -20,5 +20,6 @@ public sealed partial class ControlsGalleryViewModel()
         Section.Create<RadioButtonViewModel>(nameof(RadioButton), "Exibe um botão de opção."),
         Section.Create<SwitchViewModel>(nameof(Microsoft.Maui.Controls.Switch), "Permite alternar entre dois estados, como ligado/desligado."),
         Section.Create<StepperViewModel>(nameof(Stepper), "Permite selecionar um valor numérico dentro de um intervalo."),
-        Section.Create<SliderViewModel>(nameof(Slider), "Exibe uma barra deslizante que permite selecionar um valor numérico em um intervalo contínuo.")
+        Section.Create<SliderViewModel>(nameof(Slider), "Exibe uma barra deslizante que permite selecionar um valor numérico em um intervalo contínuo."),
+        Section.Create<PickerViewModel>(nameof(Picker), "Exibe uma lista de valores para seleção.")
     ]);

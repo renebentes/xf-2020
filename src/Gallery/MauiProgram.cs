@@ -46,6 +46,7 @@ public static class MauiProgram
         services.AddTransientWithShellRoute<ImageButtonPage, ImageButtonViewModel>();
         services.AddTransientWithShellRoute<ImagePage, ImageViewModel>();
         services.AddTransientWithShellRoute<LabelPage, LabelViewModel>();
+        services.AddTransientWithShellRoute<PickerPage, PickerViewModel>();
         services.AddTransientWithShellRoute<RadioButtonPage, RadioButtonViewModel>();
         services.AddTransientWithShellRoute<ScrollViewPage, ScrollViewViewModel>();
         services.AddTransientWithShellRoute<SliderPage, SliderViewModel>();

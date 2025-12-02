@@ -1,0 +1,63 @@
+﻿<primitives:BasePage
+    x:Class="Gallery.Controls.PickerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="Picker"
+    x:DataType="controls:PickerViewModel"
+    x:TypeArguments="controls:PickerViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Picker"/>
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Exibe uma pequena lista de itens para seleção."/>
+
+            <Label
+                FontSize="18"
+                Text="Items, Title"/>
+
+            <Picker
+                x:Name="picker"
+                Title="Selecione a marca:"
+                SelectedIndex="{Binding SelectedIndex}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>CHEVROLET</x:String>
+                        <x:String>FIAT</x:String>
+                        <x:String>FORD</x:String>
+                        <x:String>VOLKSWAGEN</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                Command="{Binding ClearSelectedCommand}"
+                Text="Limpar"/>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding x:DataType=Picker, Source={x:Reference picker}, Path=SelectedIndex}"/>
+                        <Span Text=" - "/>
+                        <Span Text="{Binding x:DataType=Picker, Source={x:Reference picker}, Path=SelectedItem}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/picker"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>
