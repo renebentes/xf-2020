@@ -1,0 +1,42 @@
+﻿<primitives:BasePage
+    x:Class="Gallery.Controls.DatePickerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Gallery.Controls"
+    xmlns:primitives="clr-namespace:Gallery.Primitives"
+    Title="DatePicker"
+    x:DataType="controls:DatePickerViewModel"
+    x:TypeArguments="controls:DatePickerViewModel">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="DatePicker"/>
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Exibe o seletor de datas da plataforma, permitindo sua seleção."/>
+
+            <Label
+                FontSize="18"
+                Text="Date, MinimumDate, MaximumDate"/>
+
+            <DatePicker
+                Date="{Binding SelectedDate}}"
+                MaximumDate="{Binding MaximumDate}"
+                MinimumDate="{Binding MinimumDate}"/>
+
+            <Label Text="{Binding SelectedDate, StringFormat='{0:dd/MM/yyyy}'}"/>
+
+            <controls:FurtherDetailsLabel Url="https://learn.microsoft.com/dotnet/maui/user-interface/controls/datepicker"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</primitives:BasePage>

@@ -27,6 +27,7 @@ public partial class AppShell : Shell
             CreateViewModelMapping<ButtonPage, ButtonViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<ContentViewPage, Controls.ContentViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<CheckBoxPage, CheckBoxViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
+            CreateViewModelMapping<DatePickerPage, DatePickerViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<EditorPage, EditorViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<EntryPage, EntryViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
             CreateViewModelMapping<FramePage, FrameViewModel, ControlsGalleryPage, ControlsGalleryViewModel>(),
