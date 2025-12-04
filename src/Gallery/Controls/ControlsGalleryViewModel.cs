@@ -25,5 +25,7 @@ public sealed partial class ControlsGalleryViewModel()
         Section.Create<DatePickerViewModel>(nameof(DatePicker), "Exibe o seletor de data por plataforma."),
         Section.Create<TimePickerViewModel>(nameof(TimePicker), "Exibe o seletor de horário por plataforma."),
         Section.Create<ActivityIndicatorViewModel>(nameof(ActivityIndicator), "Exibe uma animação indicativa de que o aplicativo está ocupado."),
-        Section.Create<ProgressBarViewModel>(nameof(ProgressBar), "Exibe uma barra de progresso relacionada a uma atividade do aplicativo.")
+        Section.Create<ProgressBarViewModel>(nameof(ProgressBar), "Exibe uma barra de progresso relacionada a uma atividade do aplicativo."),
+        Section.Create<SearchBarViewModel>(nameof(SearchBar), "Exibe um controle de entrada de usuário para uma pesquisa."),
+        Section.Create<RefreshViewViewModel>(nameof(RefreshView), "Um controle de contêiner que fornece a funcionalidade pull to refresh para conteúdo rolável.")
     ]);
